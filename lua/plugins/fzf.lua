@@ -31,7 +31,7 @@ return {
       "<leader>fg",
       mode = "n",
       function()
-        require('fzf-lua').grep_visual()
+        require('fzf-lua').grep_project()
       end,
       desc = "Grep"
     }
