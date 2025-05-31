@@ -1,16 +1,22 @@
 return {
   {
-    "hrsh7th/cmp-nvim-lsp",
-    event = "LspAttach",
-    opts = {}
-  },
-  {
     "hrsh7th/nvim-cmp",
     event = "LspAttach",
+    dependencies = {
+      'onsails/lspkind-nvim',
+      'hrsh7th/cmp-nvim-lsp',
+      'neovim/nvim-lspconfig',
+    },
     config = function()
       local cmp = require("cmp")
+      local lspkind = require('lspkind')
 
       cmp.setup({
+        formatting = {
+          format = lspkind.cmp_format({
+            mode = 'symbol_text'
+          })
+        },
         mapping = {
           ['<C-Space>'] = cmp.mapping.complete(),
           ['<Esc>'] = cmp.mapping.abort(),
@@ -26,5 +32,5 @@ return {
         )
       })
     end
-  }
+  },
 }
