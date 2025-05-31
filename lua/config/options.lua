@@ -10,7 +10,6 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.clipboard = "unnamedplus"
-vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
 vim.diagnostic.config({
   virtual_text = true,

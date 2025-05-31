@@ -1,10 +1,12 @@
 return {
   {
     "hrsh7th/cmp-nvim-lsp",
+    event = "LspAttach",
     opts = {}
   },
   {
     "hrsh7th/nvim-cmp",
+    event = "LspAttach",
     config = function()
       local cmp = require("cmp")
 
