@@ -11,6 +11,11 @@ vim.opt.relativenumber = true
 
 vim.opt.clipboard = "unnamedplus"
 
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.opt.foldlevel = 99
+vim.opt.foldenable = true
+
 vim.diagnostic.config({
   virtual_text = true,
   signs = {
