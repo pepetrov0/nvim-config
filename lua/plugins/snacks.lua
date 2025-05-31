@@ -9,6 +9,7 @@ return {
         { section = "startup" },
       }
     },
+    indent = {},
     input = {}
   },
 }
