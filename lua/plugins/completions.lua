@@ -13,12 +13,12 @@ return {
       cmp.setup({
         mapping = {
           ['<C-Space>'] = cmp.mapping.complete(),
-          ['<S-Tab>'] = cmp.mapping.abort(),
+          ['<Esc>'] = cmp.mapping.abort(),
           ['<PageUp>'] = cmp.mapping.scroll_docs(-5),
           ['<PageDown>'] = cmp.mapping.scroll_docs(5),
           ['<Up>'] = cmp.mapping.select_prev_item(),
           ['<Down>'] = cmp.mapping.select_next_item(),
-          ['<Tab>'] = cmp.mapping.confirm({ select = true }),
+          ['<CR>'] = cmp.mapping.confirm({ select = true }),
         },
         sources = cmp.config.sources(
           { { name = 'nvim_lsp' } },
