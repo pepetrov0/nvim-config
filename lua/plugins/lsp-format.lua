@@ -1,6 +1,6 @@
 return {
   "lukas-reineke/lsp-format.nvim",
-  event = "LspAttach",
+  event = "VeryLazy",
   config = function()
     require("lsp-format").setup {}
 
