@@ -9,8 +9,10 @@ return {
         { section = "startup" },
       }
     },
+    statuscolumn = {},
     indent = {},
     input = {},
-    statuscolumn = {}
+    notify = {},
+    notifier = {},
   },
 }
